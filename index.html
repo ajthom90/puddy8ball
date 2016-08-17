@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>David Puddy 8 Ball!</title>
+		<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+		<script src="8ball.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-37924042-2', 'auto');
+			  ga('send', 'pageview');
+
+		</script>
+	</head>
+
+	<body>
+		<audio autoplay>
+			<source src="askThe8ball.mp3" type="audio/mpeg">
+		</audio>
+
+		<div style="text-align: center" class="container">
+			<h1 class="page-header">ASK A QUESTION TO DAVID PUDDY'S 8 BALL JACKET!</h1>
+			<p><img class="img-responsive" src="8ball.jpg"></p>
+			<div class="alert alert-info">Everybody loves David Puddy's Magic 8 Ball jacket! Now YOU get the chance to ask it a question! Type your answer in the box below, and hit Enter or click the 'Ask Puddy!' button to ask your question.  Make sure you have your sound turned up when you ask your question!</div>
+			<p><input id="askBox" placeholder="Ask a question!" class="form-control" type="text"></p>
+			<p><button class="btn btn-success" id="askButton">Ask Puddy!</button></p>
+			<div id="previousDiv">&nbsp;</div>
+			<div>&nbsp;</div>
+		</div>
+		<audio id="audio1">
+			<source src="audio.mp3" type="audio/mpeg">
+		</audio>
+		
+		<script type="text/javascript">
+			setUp();
+		</script>
+	</body>
+</html>
