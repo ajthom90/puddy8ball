@@ -23,6 +23,8 @@
 var previouslyAskedQuestions = [];
 
 var setUp = function() {
+	$('askThe8ball')[0].play();
+	
 	var drawPreviousDiv = function() {
 		if (previouslyAskedQuestions.length == 0) {
 			$('#previousDiv').text('');
