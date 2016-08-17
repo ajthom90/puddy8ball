@@ -23,7 +23,7 @@
 var previouslyAskedQuestions = [];
 
 var setUp = function() {
-	$('askThe8Ball')[0].play();
+	$('#askThe8Ball')[0].play();
 	
 	var drawPreviousDiv = function() {
 		if (previouslyAskedQuestions.length == 0) {
